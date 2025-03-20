@@ -3,7 +3,12 @@ def get_book_text():
         file_contents = f.read()
     return file_contents
 
-def main():
-    print(get_book_text())   
+def count_words(book):
+    words = book.split()
+    count_words = len(words)
+    return count_words
 
+
+def main():  
+    print(f"{count_words(get_book_text())} words found in the document")
 main()
