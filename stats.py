@@ -15,8 +15,8 @@ def count_character(book):
 
 
 
-def print_report(words,characters):
-    print("============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...")
+def print_report(words,characters,bookpath):
+    print(f"============ BOOKBOT ============\nAnalyzing book found at {bookpath}...")
     print(f"----------- Word Count ----------\nFound {words} total words")
     print("--------- Character Count -------")
     sorted_characters = dict(sorted(characters.items(), key=lambda x:x[1], reverse=True))
